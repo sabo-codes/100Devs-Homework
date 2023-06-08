@@ -4,7 +4,7 @@ document.querySelector('button').addEventListener('click', disneyCharacter)
 // document.querySelector('ul').removeChild(li);
 
 function disneyCharacter() {
-  let character = document.querySelector('input').valarielue;
+  let character = document.querySelector('input').value;
 
 fetch(`https://api.disneyapi.dev/character?name=${character}`)
   .then(res => res.json())
